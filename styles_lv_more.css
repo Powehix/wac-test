@@ -1,0 +1,36 @@
+body {
+	background-color: black;
+	background-image: url(images/wallp_video2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#text {
+	position: absolute;
+	margin-left: 42%;
+    top: 87%; 
+    text-align: center;
+	color: #636363;
+	font-family: "Calibri";
+}
+	
+a:link, a:visited, a:active {
+	color: #969696;
+	text-decoration: none;
+}
+	
+a:hover {
+	color: #fff;
+}
+
+
+#text i {
+	padding: 2px 10px;
+}
+
+video {
+	height: 30%;
+	margin: 300px auto 0;
+	margin-left: 26%;
+	text-align: center;
+}

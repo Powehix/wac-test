@@ -1,0 +1,103 @@
+<html>
+<head>
+<title> Cyberlife | Registration </title>
+<script>
+function Validate(obj)
+{
+  var user=obj.username.value;
+  var pas=obj.password.value;
+  var rep=obj.repeat.value;
+  var mail=obj.mail.value;
+  var errors="";
+
+  if (user=="" || pas=="" || rep=="" || mail=="") 
+   {
+   alert("Fill all fields!");
+   return false;
+  }
+  if (pas!=rep)
+   {
+   errors=errors+"Passwords don't match!\n";
+   }
+  if (pas.length<6)
+  {
+  errors+="Password is too short!\n";
+  }
+  var reg=/^\w+@\w+\.\w{2,4}$/i;
+  if (!reg.test(mail))
+  {
+   errors+="incorrect e-mail" ;
+   }
+  if (errors=="")
+   {
+   alert("Registration is successful");
+   return true;
+   }
+  else
+  {
+  alert(errors);
+  return false;
+  }
+}
+</script>
+<link rel="icon" href="images/cyberlifelogo2.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="images/cyberlifelogo2.ico" type="image/x-icon">
+<link rel="stylesheet" href="styles_eng_registration.css" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> <div class="cyberlife">
+<a href="eng_home.html"> <img src="images/cyber.png" align="left"> </a> </div>
+     <nav>
+	 <ul class="topmenu">
+	 <li> <a href="eng_vhod.html"> LOG IN </a> </li>
+	 <li> <a href="eng_registration.html"> REGISTRATION </a> </li>
+	 <li> <a href="igry"> GAMES </a>
+	 <ul class="submenu">
+	 <li> <a href="dota2"> <img src="images/dota241.png"> </a> </li>
+	 <li> <a href="csgo"> <img src="images/csgo1.png"> </a> </li>
+	 <li> <a href="lol"> <img src="images/lol1.png"> </a> </li>
+	 <li> <a href="pubg"> <img src="images/pubg31.png"> </a> </li>
+	 <li> <a href="hs"> <img src="images/hs1.png"> </a> </li>
+	 <li> <a href="hots"> <img src="images/hots1.png"> </a> </li>
+	 <li> <a href="overwatch"> <img src="images/overwatch21.png"> </a> </li>
+	 <li> <a href="wow"> <img src="images/wow1.png"> </a> </li>
+	 </ul> </li>
+	 <li> <a href="novosty"> NEWS </a> </li>
+	 <li> <a href="statistika"> STATICTICS </a>
+	 <ul class="submenu">
+	 <li> <a href="matchi"> Matches </a> </li>
+	 <li> <a href="turniry"> Tournaments </a> </li>
+	 <li> <a href="igroky"> Players </a> </li>
+	 <li> <a href="komandy"> Teams </a> </li>
+	 <li> <a href="organizacyy"> Organizations </a> </li>
+	 </ul> </li> 
+	 <li> <a href="ru1.html"> <img src="images/earth1.png" align="center"> English </a>
+     <ul class="submenu"> 
+	 <li> <a href="eng_registration.html"> English </a> </li>
+     <li> <a href="lv_registration.html"> Latviešu </a> </li>
+     <li> <a href="rus_registration.html"> Русский </a> </li>
+     </ul> 
+	 </li>
+     </nav>
+	 <h1> Registration </h1>
+<div id="wrapper">
+	<form id="signin" method="get" action="" autocomplete="off" OnSubmit="return Validate(this);">
+		<input type="text" id="username" name="user" placeholder="username" />
+		<input type="text" id="mail" name="email" placeholder="e-mail" />
+		<input type="password" id="password" name="pass" placeholder="password" />
+		<input type="password" id="rep" name="repeat" placeholder="repeat password" />
+		<p> <a href="rus_sogl.html"> user agreement </a> </p>
+		<button type="submit"> Sign Up </button>
+	</form>
+</div>
+     <div id="text">
+  <a href="https://www.facebook.com/anna.mezale.5"><i class="fa fa-facebook"></i> </a>
+  <a href="https://twitter.com/AnnaSegden?lang=ru"><i class="fa fa-twitter"></i> </a>
+  <a href="https://www.instagram.com/segdenx/"><i class="fa fa-instagram"></i> </a>
+ <p> ©CYBERLIFE, 2018. All Rights Reserved. <br>
+Trademarks are the property of their respective owners. <br>
+<a href="https://vk.com/evergloam"> SUPPORT </a>  |
+<a href="eng_kont.html"> CONTACTS </a> </p>
+</div>
+</body>
+</html>
